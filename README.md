@@ -1,7 +1,6 @@
 # Typescript external modules with Angular 1 using browserify, npm, typings and Gulp
 
-------------------------------------------
-##### Looking for basic info on working with npm, ES6 and External modules [i got you covered - click here](https://github.com/ddennis/Typescript-browserify-npm)
+
 ------------------------------------------
 
 ## Install
