@@ -22,7 +22,7 @@ var opts = assign({}, watchify.args, customOpts);
 var b = watchify(browserify(opts));
 
 	// Add the typings file so typescript knows the npm modules we are using
-	b.add('typings/main.d.ts');
+	b.add('typings/index.d.ts');
 
 	// build the typescript files, providing the config for doing so
 	b.plugin(tsify, {
