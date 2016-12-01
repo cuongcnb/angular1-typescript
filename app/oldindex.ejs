@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html ng-app="app" lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+
+
+
+	<!--<body ng-controller="MainController as mainCtrl" layout="column" style="height:500px;"  ng-cloak>-->
+	<body ng-controller="MainController as mainCtrl" layout="column" style="height:500px;" >
+
+	<section layout="row" flex>
+		<!--The left menu-->
+		<%- include ./src/modules/sidemenu/sideMenuLeft.html %>
+
+
+
+		<div flex layout="column" tabIndex="-1" role="main" class="md-whiteframe-z2">
+			<md-toolbar layout="row" class="md-whiteframe-z1">
+
+				<md-button id="main" class="menu" hide-gt-sm ng-click="mainCtrl.toggleList()" aria-label="Show User List">
+					<md-icon md-svg-icon="menu" ></md-icon>
+				</md-button>
+				<h3>Typescript external modules with Angular 6 </h3>
+			</md-toolbar>
+
+			<md-content flex id="content" ui-view>
+				<!--<div ui-view></div>-->
+			</md-content>
+		</div>
+
+		<!--THE RIGHT SIDE MENU GOES HERE-->
+
+	</section>
+
+		<script type="text/javascript" src="app.js"></script>
+
+	</body>
+</html>
