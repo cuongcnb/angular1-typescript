@@ -1,5 +1,6 @@
-import {Person} from "../../models/person.model";
 import {TypedJSON} from "typedjson-npm/js/typed-json";
+import {Person} from "../shared/models/person.model";
+import {app} from "../app";
 
 export class HomeController {
 
@@ -20,3 +21,4 @@ export class HomeController {
 
 }
 
+//app.controller('HomeController', HomeController);

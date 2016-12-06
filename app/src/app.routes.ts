@@ -1,4 +1,4 @@
-import {CONSTANTS} from  './constants';
+import {CONSTANTS} from  './app.constants';
 
 
 export var routes = {
@@ -28,14 +28,8 @@ export var routes = {
         {
             url: "/home",
             state: CONSTANTS.PAGES.HOME,
-            templateUrl: "./modules/home/home.html",
-            controller: 'HomeController as homeCtrl'
-        },
-        {
-            url: "/about",
-            state: CONSTANTS.PAGES.ABOUT,
-            templateUrl: "./modules/about/about.html",
-            controller: 'AboutController as aboutCtrl'
+            templateUrl: "./home/home.view.html",
+            controller: 'HomeController as vm'
         }
 
     ]

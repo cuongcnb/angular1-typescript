@@ -16,7 +16,7 @@ gulp.task("watch", function () {
 
 	  gulp.watch( config.styles.lessFiles , ['styles']);
 	  gulp.watch("dist/app.js").on('change', browserSync.reload);
-	  gulp.watch( ['app/index.ejs', 'app/src/modules/**/*.ejs', 'app/src/modules/**/*.html'], ['markup']);
+	  gulp.watch( ['app/index.ejs', 'app/src/**/*.ejs', 'app/src/**/*.html'], ['markup']);
 	  
 	  
 	  //gulp.watch(config.outputFolder + '**/*.html', htmlInjector);

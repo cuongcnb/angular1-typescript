@@ -29,9 +29,9 @@ gulp.task('markup', function () {
 			.pipe(gulpif(browserSync.active, browserSync.reload({stream: true})));
 
 
-	  return gulp.src('./app/src/modules/**/*.html')
-			.pipe(changed('./app/src/modules/**/*.html')) // Ignore unchanged files
-			.pipe(gulp.dest('dist/modules/'))
+	  return gulp.src('./app/src/**/*.html')
+			.pipe(changed('./app/src/**/*.html')) // Ignore unchanged files
+			.pipe(gulp.dest('dist/'))
 			.pipe(gulpif(browserSync.active, browserSync.reload({stream: true, once: true})));
 
 });
