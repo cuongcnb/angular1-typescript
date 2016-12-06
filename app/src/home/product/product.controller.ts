@@ -12,6 +12,12 @@ export class ProductController {
         }, {
             id: 2,
             name: "Product B"
+        }, {
+            id: 3,
+            name: "Product C"
+        }, {
+            id: 4,
+            name: "Product D"
         }];
     }
 }

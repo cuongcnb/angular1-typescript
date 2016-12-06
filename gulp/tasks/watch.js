@@ -15,7 +15,7 @@ var htmlInjector = require("bs-html-injector");
 gulp.task("watch", function () {
 
 	  gulp.watch( config.styles.lessFiles , ['styles']);
-	  gulp.watch("dist/app.js").on('change', browserSync.reload);
+	  //gulp.watch("dist/app.js").on('change', browserSync.reload);
 	  gulp.watch( ['app/index.ejs', 'app/src/**/*.ejs', 'app/src/**/*.html'], ['markup']);
 	  
 	  
