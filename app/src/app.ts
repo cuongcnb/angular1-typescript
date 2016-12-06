@@ -20,6 +20,7 @@ import {CONSTANTS} from './app.constants';
 import {routes} from './app.routes'
 import {config} from './app.config';
 import {HomeController} from "./home/home.controller";
+import {ProductController} from "./home/product/product.controller";
 import {MainController} from "./main.controller";
 
 
@@ -34,6 +35,7 @@ export let app = angular.module('app',
     .constant('routes', routes)
     .config(config)
     .controller('MainController', MainController)
-    .controller('HomeController', HomeController);
+    .controller('HomeController', HomeController)
+    .controller('ProductController', ProductController);
 
 
