@@ -15,6 +15,7 @@
     "browser-sync": "^2.10.1",
     "browserify": "^13.0.0",
     "browserify-ngannotate": "^2.0.0",
+    "browserify-shim": "^3.8.12",
     "bs-html-injector": "^3.0.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
@@ -42,8 +43,28 @@
     "watchify": "^3.7.0"
   },
   "dependencies": {
+    "angular-gettext": "^2.3.8",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
     "pixi.js": "^4.2.3",
     "reflect-metadata": "^0.1.8",
     "typedjson-npm": "^0.1.6"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.js"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "angular": {
+      "exports": "angular",
+      "depends": [
+        "jquery"
+      ]
+    }
   }
 }

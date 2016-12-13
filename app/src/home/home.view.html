@@ -1,6 +1,18 @@
 <h1>THIS IS HOME</h1>
+
+<div class="header">
+    <kv-scroll-tabs on-add="vm.addTab()" ng-model="activeCart.uuid">
+        <kv-scroll-tab-pane ng-repeat="cart in carts track by cart.uuid" ng-if="$index < 20" kv-tab-id="cart.uuid"
+                            on-select="vm.selectTab(cart)"
+                            on-close="vm.closeTab(cart)">
+
+            <span skip-disable>{{cart.Code}}</span>
+
+        </kv-scroll-tab-pane>
+    </kv-scroll-tabs>
+</div>
+
 <h2>{{vm.person.getFullname() }} - Group: {{vm.person.group.name}} </h2>
 
-<div ng-click="vm.loadData()" class="md-button md-raised md-primary" >click to load</div>
 
 <div ng-include="'home/product/product.view.html'"></div>

@@ -1,0 +1,11 @@
+<div class="kvTabs ulN">
+	<ul class="mr-bg">
+		<li ng-repeat="pane in vm.panes">
+			<a href="" skip-disable ng-click="select(pane, false, $index)"
+				class="{{'tabBut_' + $index}} {{(pane.invisible == true) ? 'ng-hide' : ''}} tabbut_new"
+				ng-class="{'active':pane.selected}">{{pane.title | translate}}</a>
+		</li>
+	</ul>
+	<div class="tabBg"></div>
+	<div ng-transclude></div>
+</div>
