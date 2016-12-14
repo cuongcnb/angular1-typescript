@@ -4,6 +4,15 @@
             <input type="text" class="form-control" />
             <input type="text" class="form-control input-quatity" />
         </div>
+        <kv-scroll-tabs on-add="vm.addTab()" ng-model="activeCart.uuid">
+        <kv-scroll-tab-pane ng-repeat="cart in carts track by cart.uuid" ng-if="$index < 20" kv-tab-id="cart.uuid"
+                            on-select="vm.selectTab(cart)"
+                            on-close="vm.closeTab(cart)">
+
+            <span skip-disable>{{cart.Code}}</span>
+
+        </kv-scroll-tab-pane>
+    </kv-scroll-tabs>
     </div>
     <div class="wrap-content">
         <div class="col-right">

@@ -18,5 +18,5 @@ gulp.task('dev', ['clean'], function(callback) {
 	  config.productionBuild = false;
 	  callback = callback || function() {};
 
-	  runSequence(['markup', 'browserifyTypescript', 'styles' ,'assets'], 'watch')
+	  runSequence(['markup', 'browserifyTypescript', 'styles', 'fonts' ,'assets'], 'watch')
 });
