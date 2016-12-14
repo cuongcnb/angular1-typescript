@@ -71,3 +71,4 @@ dist/
 
 !.elasticbeanstalk/*.global.yml
 /typings/
+app/src/home/home.view.html.orig
