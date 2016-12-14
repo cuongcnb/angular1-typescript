@@ -1,6 +1,18 @@
-<h1>THIS IS HOME</h1>
-<h2>{{vm.person.getFullname() }} - Group: {{vm.person.group.name}} </h2>
-
-<div ng-click="vm.loadData()" class="md-button md-raised md-primary" >click to load</div>
-
-<div ng-include="'home/product/product.view.html'"></div>
+<div class="wrapper">
+    <div class="header">
+        <div class="search-wrapper">
+            <input type="text" class="form-control" />
+            <input type="text" class="form-control input-quatity" />
+        </div>
+    </div>
+    <div class="wrap-content">
+        <div class="col-right">
+            <div class="col-right-content"></div>
+            <div class="wrap-button">
+                <button type="button" class="btn btn-primary">In</button>
+                <button type="button" class="btn btn-primary">Thanh toán (F9)</button>
+            </div>
+        </div>
+        <div class="col-left"></div>
+    </div>
+</div>

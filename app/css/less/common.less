@@ -1,0 +1,37 @@
+@import "variables.less";
+/***************Common***************************/
+*{box-sizing: border-box;}
+html,body{margin: 0;padding: 0; height: 100%; font-family: @font-family; font-size: @font-size;}
+.wrapper{
+    height: 100%;
+    .wrap-content{
+        height: @height-content;
+        background-color: #eceaeb;
+        .col-left{
+            margin-right: @width-col-right;
+            height: 100%;
+            
+        }
+        .col-right{
+            width: @width-col-right;
+            background-color: #fff;
+            height: 100%;
+            float: right;
+            border-left: 1px solid @border-color;
+            &-content{
+                height:@height-right-content;
+                background-color: #ddd 
+            }
+            .wrap-button{
+                padding: 16px 12px;
+                .btn{
+                    padding: 15px;
+                    font-size: 16px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+/***************End Common***************************/
