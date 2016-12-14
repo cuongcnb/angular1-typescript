@@ -19,6 +19,7 @@
   border: 1px solid transparent;
   white-space: nowrap;
   padding:@padding-base-vertical @padding-base-horizontal;
+  .border-radius();
 
   &,
   &:active,
@@ -49,6 +50,10 @@
     //cursor: @cursor-disabled;
     .opacity(.65);
     .box-shadow(none);
+  }
+  &-default{
+      background-color: @bg-btn-default;
+      color: white;
   }
   &-primary{
       background-color: @brand-success;

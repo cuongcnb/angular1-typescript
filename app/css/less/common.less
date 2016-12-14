@@ -17,21 +17,32 @@ html,body{margin: 0;padding: 0; height: 100%; font-family: @font-family; font-si
             background-color: #fff;
             height: 100%;
             float: right;
-            border-left: 1px solid @border-color;
+            //border-left: 1px solid @border-color;
             &-content{
                 height:@height-right-content;
-                background-color: #ddd 
             }
             .wrap-button{
-                padding: 16px 12px;
+                padding: 10px 12px 16px;
                 .btn{
                     padding: 15px;
                     font-size: 16px;
+                    line-height: 1.5;
                     color: white;
+                    .border-radius(5px);
+                    &-default{
+                        width: 27%;
+                    }
+                    &-primary{
+                        width: 70%;
+                        margin-left: 2%;
+                    }
                 }
             }
         }
     }
+}
+.icons{
+    
 }
 
 /***************End Common***************************/
